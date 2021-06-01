@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">OyunMatik</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="oyun_string">Hafıza Oyunu\nÜcret: x\nKazanç: 0.00-0.08\nZorluk: Orta</string>
+    <string name="oyun2_string">Sandık Aç\nÜcret: x?\nKazanç: 0.03-0.08\nZorluk: Kolay</string>
+    <string name="oyun3_string">Slot MAKİNESİ\nÜcret: x\nKazanç: 0.01-0.07\nZorluk: Kolay</string>
+
+    <string name="gorev_string">Banner Tıklama\n\nKazanç: +%5\nMAX: 2 KEZ\nGörev: SAYFANIN ALTINDAKİ REKLAMA TIKLA</string>
+    <string name="gorev2_string">Tam Ekran Tıklama\n\nKazanç: +%10\nMAX: 9 KEZ\nGörev: OYUN SONUNDA ÇIKAN TAM EKRAN REKLAMA TIKLA</string>
+
+</resources>

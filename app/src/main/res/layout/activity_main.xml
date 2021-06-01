@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/container2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/container2"
+        android:layout_alignRight="@id/container2"
+        android:layout_alignBottom="@+id/container2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="0dp"
+        android:visibility="visible"
+        app:adSize="SMART_BANNER"
+        app:adUnitId="ca-app-pub-1271658648146831/2038796244" />
+</RelativeLayout>

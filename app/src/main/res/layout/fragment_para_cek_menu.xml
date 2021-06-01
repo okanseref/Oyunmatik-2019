@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F2E6A7"
+    tools:context=".ParaCekMenu">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.54">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.71">
+
+                    <Button
+                        android:id="@+id/geri2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="4dp"
+                        android:background="@drawable/button_effect"
+                        android:fontFamily="@font/luckiest_guy"
+                        android:text="GERİ" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.71" />
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.44"
+            android:gravity="center">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/check_kontor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_drawable"
+                    android:checked="true"
+                    android:fontFamily="@font/luckiest_guy"
+                    android:text="  Kontör veyA papara" />
+
+                <RadioButton
+                    android:id="@+id/check_banka"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:button="@drawable/checkbox_drawable"
+                    android:fontFamily="@font/luckiest_guy"
+                    android:text="  Banka veya İNİNAL hesabına çek" />
+            </RadioGroup>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="0.85">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1" />
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/cerceve">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/luckiest_guy"
+                        android:gravity="center"
+                        android:text="   Çekmek İSTEDİĞİN tutar"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/edit_tutar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number|numberDecimal"
+                        android:maxLength="50"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorLink="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/cerceve">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/luckiest_guy"
+                        android:gravity="center"
+                        android:text="   E-posta Adresİ   "
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/edit_eposta"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="50"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorLink="#000000" />
+
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/cerceve">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/luckiest_guy"
+                        android:gravity="center"
+                        android:text="   HESAP IBAN NO (TR...)"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/edit_iban"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="26"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorLink="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:id="@+id/t2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/cerceve">
+
+                    <TextView
+                        android:id="@+id/tel_veya_papara"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/luckiest_guy"
+                        android:gravity="center"
+                        android:text="    TELEFON veya PAPARA NO"
+                        android:textColor="#000000"
+                        android:textSize="14dp" />
+
+                    <EditText
+                        android:id="@+id/edit_telno"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textColor="#000000"
+                        android:textColorHighlight="#000000"
+                        android:textColorLink="#000000" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1">
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/cerceve"
+                    android:gravity="center|left">
+
+                    <CheckBox
+                        android:id="@+id/onay_butonu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="6dp"
+                        android:button="@drawable/onaybox_drawable"
+                        android:fontFamily="@font/luckiest_guy"
+                        android:text="GİRDİĞİM BİLGİLERİ KONTROL ETTİM" />
+                </TableRow>
+            </LinearLayout>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0.6"
+                            android:gravity="center">
+
+                            <Button
+                                android:id="@+id/form_gonder"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_effect"
+                                android:fontFamily="@font/luckiest_guy"
+                                android:text="FORMU GÖNDER" />
+                        </TableRow>
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1" />
+                    </LinearLayout>
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5" />
+            </LinearLayout>
+
+        </TableRow>
+
+    </LinearLayout>
+
+</FrameLayout>

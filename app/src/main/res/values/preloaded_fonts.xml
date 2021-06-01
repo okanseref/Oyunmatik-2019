@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/farsan</item>
+        <item>@font/kavoon</item>
+        <item>@font/luckiest_guy</item>
+        <item>@font/nova_oval</item>
+        <item>@font/palanquin_dark</item>
+        <item>@font/roboto_thin</item>
+    </array>
+</resources>
